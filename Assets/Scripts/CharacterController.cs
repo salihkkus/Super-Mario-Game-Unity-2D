@@ -6,8 +6,8 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
 
-[SerializeField] private float speed = 10f;
-[SerializeField] private float jumpForce = 5f;
+[SerializeField] private float speed = 5f;
+[SerializeField] private float jumpForce = 400f;
 
 private Rigidbody2D _rigidbody2D;
 private Animator _animator;
@@ -44,8 +44,16 @@ private void FixedUpdate()
     if(jumping)
     {
         _rigidbody2D.AddForce(new Vector2(0f,jumpForce));
+        jumping = false;
     }
 }
 
+private void OnCollisionEnter2D(Collision2D other)
+{
+    if(other.gameObject.CompareTag("Ground"))
+    {
+        grounded = true;
+    }
+}
 
 }
