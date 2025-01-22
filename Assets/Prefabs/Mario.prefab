@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 5038590252918963018}
   - component: {fileID: 8267788481387637627}
   - component: {fileID: 1673152194787848712}
+  - component: {fileID: 821158709180833826}
   m_Layer: 0
   m_Name: Mario
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,8 +185,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d3182c92a7ecc479f7a20d615bf836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
-  jumpForce: 300
+  speed: 4
+  jumpForce: 350
+--- !u!114 &821158709180833826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36777529664167117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2530137e10975b479f1b322d34f10a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicksound: {fileID: 8300000, guid: ef4b768da3ed98149bbb580f6c7c7dc4, type: 3}
 --- !u!1 &7779742317344172701
 GameObject:
   m_ObjectHideFlags: 0
