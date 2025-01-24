@@ -104,7 +104,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Screenshots
 
 ### Main Gameplay
-![Main Gameplay](![image](https://github.com/user-attachments/assets/c373fc60-149d-466c-bfd0-8ce248de11a6))
+![Main Gameplay](https://drive.google.com/file/d/16ONyCEBvu3FafjYRvRTOlj9yiewHhh3l/view?usp=sharing)
 
 
 ---
