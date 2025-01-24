@@ -97,7 +97,7 @@ Contributions are welcome! If you'd like to contribute:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project was made entirely with assets with CC0 license.
 
 ---
 
