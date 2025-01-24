@@ -40,7 +40,7 @@ This is a 2D platformer game built using Unity. Inspired by the classic Super Ma
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/super-mario-clone.git
+   git clone https://github.com/salihkkus/super-mario-clone.git
    ```
 
 2. Open the project in Unity:
