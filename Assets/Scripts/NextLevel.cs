@@ -15,4 +15,9 @@ private void OnTriggerEnter2D(Collider2D other)
     }
 }
 
+public void Next()
+{
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+}
+
 }

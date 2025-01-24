@@ -1572,7 +1572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sokoban_tilesheet@2_69
+      name: head
       rect:
         serializedVersion: 2
         x: 768
@@ -2281,6 +2281,7 @@ TextureImporter:
       dia3: -733449652
       dia4: 1067073116
       dia5: 1855599622
+      head: -801042353
       sokoban_tilesheet@2_0: 1132211164
       sokoban_tilesheet@2_1: -1021656907
       sokoban_tilesheet@2_10: 1100215210
@@ -2345,7 +2346,6 @@ TextureImporter:
       sokoban_tilesheet@2_66: -1720481596
       sokoban_tilesheet@2_67: 908508383
       sokoban_tilesheet@2_68: -759667715
-      sokoban_tilesheet@2_69: -801042353
       sokoban_tilesheet@2_7: -1042403693
       sokoban_tilesheet@2_70: 1176596312
       sokoban_tilesheet@2_71: -765419058
