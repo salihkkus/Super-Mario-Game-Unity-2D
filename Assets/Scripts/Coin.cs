@@ -30,6 +30,6 @@ public class Coin : MonoBehaviour
     // Coin sayısını UI'da güncelleyen fonksiyon
     private void UpdateCoinText()
     {
-        coinText.text = "Coins: " + count;
+        coinText.text = "Coins :  " + count + " / 22";
     }
 }
