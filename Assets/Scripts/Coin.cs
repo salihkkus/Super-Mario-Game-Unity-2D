@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using TMPro; // TextMeshPro kullanımı için gerekli
+using TMPro;
 
 public class Coin : MonoBehaviour
 {
     [SerializeField] private AudioClip clicksound; // Coin sesi
     [SerializeField] private TextMeshProUGUI coinText; // UI Text referansı
     private int count = 0; // Toplanan coin sayısı
+
+    private void Start()
+    {
+        // Yeni oyun başladığında skoru sıfırla
+        PlayerPrefs.SetInt("PlayerScore", 0);
+        PlayerPrefs.Save();
+
+        // Skoru sıfır olarak başlat
+        count = 0;
+        UpdateCoinText();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,6 +29,10 @@ public class Coin : MonoBehaviour
             Debug.Log("Toplanan Coin: " + count);
             AudioSource.PlayClipAtPoint(clicksound, other.transform.position);
 
+            // Skoru PlayerPrefs ile kaydet
+            PlayerPrefs.SetInt("PlayerScore", count);
+            PlayerPrefs.Save();
+
             // UI'yı güncelle
             UpdateCoinText();
 
@@ -27,9 +41,8 @@ public class Coin : MonoBehaviour
         }
     }
 
-    // Coin sayısını UI'da güncelleyen fonksiyon
     private void UpdateCoinText()
     {
-        coinText.text = "Coins :  " + count + " / 22";
+        coinText.text = "Coins : " + count + " / 22 ";
     }
 }
