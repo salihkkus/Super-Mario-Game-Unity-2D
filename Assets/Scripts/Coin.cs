@@ -27,7 +27,7 @@ public class Coin : MonoBehaviour
             // Coin sayısını artır ve ses çal
             count++;
             Debug.Log("Toplanan Coin: " + count);
-            AudioSource.PlayClipAtPoint(clicksound, other.transform.position);
+            AudioSource.PlayClipAtPoint(clicksound, other.transform.position, 10000f);
 
             // Skoru PlayerPrefs ile kaydet
             PlayerPrefs.SetInt("PlayerScore", count);
