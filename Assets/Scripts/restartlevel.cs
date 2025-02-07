@@ -4,15 +4,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class restartlevel : MonoBehaviour
+public class RestartLevel : MonoBehaviour
 {
-
-private void OnTriggerEnter2D(Collider2D other)
-{
-    if(other.CompareTag("Player"))
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (other.CompareTag("Player")) // Check if the player collides with the trigger
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the current scene
+        }
     }
-}
-
 }
