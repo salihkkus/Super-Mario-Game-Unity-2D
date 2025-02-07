@@ -5,14 +5,14 @@ using TMPro;
 
 public class ScoreDisplay : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI scoreText; // Reference to the UI text component
 
     private void Start()
     {
-        // PlayerPrefs'den skoru al
+        // Retrieve the player's score from PlayerPrefs
         int playerScore = PlayerPrefs.GetInt("PlayerScore", 0);
 
-        // UI Text'ini güncelle
+        // Update the UI text to display the score
         scoreText.text = "YOUR SCORE : " + playerScore;
     }
 }
